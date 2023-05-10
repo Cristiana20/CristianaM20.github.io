@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Turistele DMC</title>
+ <style>
+      body {
+        margin: 10px;
+        background-image: url("https://wallpapercave.com/wp/wp8576633.png");
+        background-size: cover;
+        background-position: center;
+      }
+      	.border {
+			text-align: center;
+            font-size: 18px;
+		}
+		.button {
+			background-color: rgb(249, 205, 240);
+			color: black;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 18px;
+			margin: 10px;
+		}
+    </style>
+
+</head>
+<body>
+
+<div class="border" style="text-align:center;">
+		
+        
+<img src="https://i.ibb.co/GHyxxLx/dmcpro.png" height="120" width="120">
+		<p>Suntem o agenție tânără, dar serioasă!</p>
+        <br>
+        <a href="index.html" class="button">Acasa</a>
+		<a href="blog.html" class="button">Blog</a>
+		<a href="despre noi.html" class="button">Despre noi</a>
+        <a href="Contact.html" class="button">Contact</a>
+	</div>
+    <br><br><br><br>
+<div style="text-align:center;">
+<h1> Pachete turistice</h1>
+
+
+
+</div>
+</body>
+</html>
