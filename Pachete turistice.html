@@ -1,85 +1,499 @@
-
 <!DOCTYPE html>
-<html>
+
 <head>
-<title>Turistele DMC</title>
- <style>
-      body {
-        margin: 10px;
-        background-image: url("https://wallpapercave.com/wp/wp8576633.png");
-        background-size: cover;
-        background-position: center;
-      }
-      	.border {
-			text-align: center;
-            font-size: 18px;
-		}
-		.button {
+
+<style>
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F9FA;
+  color: #222222;
+  font-weight: 400;
+}
+
+  .button {
 			background-color: rgb(249, 205, 240);
 			color: black;
 			padding: 10px 20px;
 			border-radius: 5px;
 			font-size: 18px;
 			margin: 10px;
-		}
-    </style>
+		} 
+  
 
+strong {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.125rem;
+  color: #222222;
+  margin: 0 0 15px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  color: #000000;
+  font-size: 36px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+h2 {
+  color: #222222;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+h3 {
+  color: #444444;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 50px;
+  }
+}
+
+h4 {
+  color: #555555;
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 40px;
+  }
+}
+
+h5 {
+  color: #666666;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    font-size: 35px;
+  }
+}
+
+h6 {
+  color: #777777;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  h6 {
+    font-size: 32px;
+  }
+}
+
+section {
+  padding: 90px 15px;
+}
+
+a.cta {
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FF69B4;
+  border: 1px solid #F0FFFF;
+  border-radius: 25px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 19px 0px;
+          box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 19px 0px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+a.cta:hover {
+  background-color: #f75763;
+  border: 1px solid #3b1215;
+  color: #000000;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container img {
+  padding: 0.25rem;
+  border: 1px solid #fff0f5;
+  border-radius: 0.25rem;
+}
+
+.banner {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(10, 7, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../img/banner.jpg) no-repeat;
+  background: linear-gradient(90deg, rgba(100, 10, 30, 0.8), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp8576633.png") no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+.banner h1 {
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.banner p {
+  color: #FFFFFF;
+  font-size: 1.375rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-shadow: 2px 2px 7px #222222;
+}
+
+
+
+
+.second {
+  background-color: #F0FFFF;
+}
+
+.second .container {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .second .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .second .container .left-img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .second .container .right-content {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+.second .container .right-content h2 {
+  margin: 30px 0 0;
+}
+
+@media (min-width: 768px) {
+  .second .container .right-content h2 {
+    margin: 0;
+  }
+}
+
+.third {
+  background-color: #e6f5fc;
+}
+
+@media (min-width: 768px) {
+  .third .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .four .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .four .container .member {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .four .container .member h3 {
+    font-size: 32px;
+  }
+}
+
+
+
+footer {
+  background-color: SlateBlue;
+  padding: 40px 15px;
+}
+
+footer .container {
+  max-width: 600px;
+}
+
+footer p {
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+  font-weight: 100;
+  font-size: 14px;
+}
+</style>
+
+
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- font ends here -->
+  <link rel="stylesheet" href="./sass/style.css">
+  <title>Despre noi</title>
 </head>
 <body>
 
 <div class="border" style="text-align:center;">
-		
-        
+<br><br>
 <img src="https://i.ibb.co/GHyxxLx/dmcpro.png" height="120" width="120">
-		<p>Suntem o agenție tânără, dar serioasă!</p>
-        <br>
+    <br><br>
+  <div class="border" style="text-align:center;">    
+
+		
         <a href="index.html" class="button">Acasa</a>
 		<a href="blog.html" class="button">Blog</a>
-		<a href="despre noi.html" class="button">Despre noi</a>
+		<a href="despre noi.html" class="button">Despre noi/a>
         <a href="Contact.html" class="button">Contact</a>
 		<a href="Curios.html" class="button">Curiozități</a>
         <a href="Partener.html" class="button">Parteneriate</a>
-	</div>
-    <br><br><br><br>
-<div style="text-align:center;">
-<h1> Pachete turistice</h1>
+	</div> 
+    <br><br>
+  <section class="banner">
+    <div class="container">
+    
+   
+      <h1>Pachete turistice în România</h1>
+      
+    </div>     <!-- .container -->
+  </section>  <!-- .banner -->
+  
+  <section class="second">
+    <div class="container">
+      <div class="left-img">
+        <img src="https://thumbs.gfycat.com/FlusteredCreepyHorsefly-max-1mb.gif" alt="DMC">
+      </div>
+      <div class="right-content">
+        <h2>EXCURSIE CLUJ</h2>
+        <p>DMC vă oferă o varietate de excursii și pachete turistice în Cluj-Napoca, un oraș vibrant și plin de cultură din România. Vă putem ajuta să descoperiți cele mai interesante atracții turistice, să explorați frumusețea arhitecturii, să gustați bucătăria locală și să vă bucurați de atmosfera animată a orașului.</p>
+        <a class="cta" href="fyghj">Learn more »</a>
+      </div>
+    </div>
+  </section>
 
-</div>
+<section class="second">
+    <div class="container">
+      <div class="left-img">
+        <img src="https://thumbs.gfycat.com/WiltedClumsyIcterinewarbler-size_restricted.gif" alt="DMC">
+      </div>
+      <div class="right-content">
+        <h2>EXCURSIE IAȘI</h2>
+        <p>DMC, agenția de turism, vă poate ajuta să descoperiți frumusețea orașului Iași prin oferirea unor pachete turistice personalizate și excursii captivante. Iași este un important centru cultural și istoric din România, cu o moștenire bogată și numeroase atracții turistice.</p>
+        <a class="cta" href="fyghj">Learn more »</a>
+      </div>
+    </div>
+  </section>
 
-<div style="text-align:center;">
-<h2>Destinații România<h2>
-<img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/d7/d4/40.jpg" height="200" width="300"> <br>
-<a href="exCLUJ.html" target="_blank" class="button">Rezervă excursie Cluj!</a>
-<br>
-<br>
-<img src="https://urlaub-in-rumänien.de/wp-content/uploads/2017/02/Palatul_Parlamentului.jpg" height="200" width="300"> <br>
-<a href="#" target="_blank" class="button">Rezervă excursie București!</a>
-<br><br>
-<img src="https://iesf.org/wp-content/uploads/2023/01/aerial-drone-panoramic-view-palace-culture-iasi-romania-square-front-it-scaled.jpg" height="200" width="300"> <br>
-<a href="#" target="_blank" class="button">Rezervă excursie Iași!</a>
-<br><br>
-<img src="https://urlaub-in-rumänien.de/wp-content/uploads/2017/10/Piata-Victoriei-3-1.jpg" height="200" width="300"> <br>
-<a href="#" target="_blank" class="button">Rezervă excursie Timișoara!</a>
-<br>
-<br>
-<br>
-<h2>Destinații din afară<h2>
-<br>
-<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/478C/production/_121561381_gettyimages-976199210.jpg" height="200" width="300"> <br>
-<a href="#" target="_blank" class="button">Rezervă excursie Franța!</a>
-<br><br>
-<img src="https://www.italia.it/content/dam/tdh/en/interests/italia/i-5-posti-piu-belli-d-italia/media/1600X1000_le_5_citta_piu_belle_d_italia_non_sono_quelle_che_immagini_hero.jpg" height="200" width="300"> <br>
-<a href="#" target="_blank" class="button">Rezervă excursie Italia!</a>
-<br><br>
-<img src="https://wise.com/imaginary/viata-in-spania_984319491.png" height="200" width="300"> <br>
-<a href="#" target="_blank" class="button">Rezervă excursie Spania!</a>
-<br><br>
-<img src="https://www.infofinanciar.ro/wp-content/uploads/2022/06/vacanta-de-vara-grecia.jpg" height="200" width="300"> <br>
-<a href="#" target="_blank" class="button">Rezervă excursie Grecia!</a>
-<br> <br><br>
-<h2>Rezervările se pot face și pe mail sau prin telefon! <h2>
 
-</div>
+<section class="second">
+    <div class="container">
+      <div class="left-img">
+        <img src="https://i.makeagif.com/media/3-17-2017/n1marK.gif" alt="DMC">
+      </div>
+      
+      <div class="right-content">
+        <h2>EXCURSIE BUCUREȘTI</h2>
+        <p>DMC, agenția de turism, vă poate ajuta să descoperiți frumusețea și bogăția culturală a capitalei României, București, prin oferirea de excursii personalizate și pachete turistice captivante. Bucureștiul este un oraș vibrant, cu o istorie fascinantă, arhitectură impresionantă, parcuri încântătoare și o viață de noapte animată.</p>
+        <a class="cta" href="fyghj">Learn more »</a>
+      </div>
+    </div>
+  </section>
+
+
+<section class="second">
+    <div class="container">
+      <div class="left-img">
+        <img src="https://media3.giphy.com/media/eSWtzrkV8jcD4WYhEl/200w.gif?cid=82a1493bl9ymyrqimsd2gg6tph2c2od4o2wxc7iiapz3kmlp&ep=v1_gifs_related&rid=200w.gif&ct=g" alt="DMC" height="250" width="350">
+      </div>
+      <div class="right-content">
+        <h2>EXCURSIE CLUJ</h2>
+        <p>Termenii și condițiile pentru consumatorii firmei DMC pot varia în funcție de serviciile și pachetele turistice oferite.Este important ca fiecare consumator să citească și să înțeleagă în mod atent termenii și condițiile specifice furnizate de DMC înainte de a rezerva o călătorie sau de a efectua plăți. Dacă există nelămuriri sau întrebări contactați-ne.</p>
+        <a class="cta" href="fyghj">Learn more »</a>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="banner">
+    <div class="container">
+    
+   
+      <h1>Pachete turistice în străinătate</h1>
+    
+    </div>     <!-- .container -->
+  </section>  <!-- .banner -->
+
+
+<section class="second">
+    <div class="container">
+      <div class="left-img">
+        <img src="https://i.gifer.com/8w00.gif" alt="DMC">
+      </div>
+      
+      <div class="right-content">
+        <h2>EXCURSIE FRANȚA</h2>
+        <p>DMC vă poate ajuta să organizați o excursie de neuitat în Franța, una dintre cele mai populare destinații turistice din lume. Franța este renumită pentru peisajele sale variate, patrimoniul cultural bogat, arta, gastronomia și multe altele. Indiferent dacă doriți să explorați Parisul romantic, să vă bucurați de soarele din Riviera Franceză sau să descoperiți frumusețea regiunilor istorice precum Provence sau Normandia, suntem aici pentru a vă ajuta să vă planificați excursia perfectă.</p>
+        <a class="cta" href="fyghj">Learn more »</a>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="second">
+    <div class="container">
+      <div class="left-img">
+        <img src="https://media.tenor.com/zbGgxVRvoDMAAAAC/sight-seeing-vacation.gif" alt="DMC">
+      </div>
+      <div class="right-content">
+        <h2>EXCURSIE ITALIA</h2>
+        <p>DMC vă poate ajuta să organizați o excursie fascinantă în Italia, o țară bogată în istorie, artă, gastronomie și frumuseți naturale. Italia este renumită pentru orașele sale magnifice, peisajele pitorești, monumentele istorice și cultura sa vibrantă. Indiferent dacă doriți să explorați străzile romantice ale Romei, să vă bucurați de farmecul Veneției sau să descoperiți splendoarea Toscanei, suntem aici pentru a vă ajuta să vă planificați excursia perfectă în Italia.</p>
+        <a class="cta" href="fyghj">Learn more »</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="second">
+    <div class="container">
+      <div class="left-img">
+        <img src="https://earth.esa.int/web/earth-watching/content/documents/257246/1907669/Valencia_animation/index.gif" alt="DMC">
+      </div>
+      <div class="right-content">
+        <h2>EXCURSIE SPANIA</h2>
+        <p>DMC vă poate ajuta să aveți o excursie deosebită în Spania, o destinație populară pentru călătorii datorită peisajelor diverse, culturii bogate, plajelor frumoase și gastronomiei delicioase. Spania oferă o varietate de experiențe, de la orașe vibrante și istorice până la sate pitorești și regiuni încântătoare.</p>
+        <a class="cta" href="fyghj">Learn more »</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="second">
+    <div class="container">
+      <div class="left-img">
+        <img src="https://i.pinimg.com/originals/54/cb/3e/54cb3ef6e0419eaf79a155a97d143e86.gif" alt="DMC">
+      </div>
+      <div class="right-content">
+        <h2>EXCURSIE GRECIA</h2>
+        <p>Grecia este o destinație deosebită ce combină peisaje spectaculoase, istorie bogată, mitologie și ospitalitate grecească autentică. Grecia este renumită pentru insulele sale frumoase, siturile arheologice impresionante și gastronomia sa delicioasă.</p>
+        <a class="cta" href="fyghj">Learn more »</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="banner">
+    <div class="container">
+    
+   
+      <h1>Pachete turistice personalizate</h1>
+    
+    </div>     <!-- .container -->
+  </section>  <!-- .banner -->
+
+ 
+
+
+  <section class="six">
+    <div class="container">
+      <h4></h4>
+      <p>Vă putem ajuta să creați un pachet turistic personalizat pentru a vă potrivi exact preferințelor și nevoilor dvs. în timpul excursiei în Grecia. </p>
+      <img src="https://i.pinimg.com/originals/59/7b/a9/597ba9b7c4289f1c673356d9716301a7.gif">
+      <p><i>Vă rugăm să ne contactați prin intermediul paginii noastre de contact sau să ne sunați la numărul de telefon afișat pentru a începe să planificăm împreună pachetul turistic personalizat în Grecia.</i></p>
+      <a class="cta" href="index.html">Contact</a>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <footer>
+    <div class="container">
+      <p>Pentru mai multe informații puteți să ne contactați în perioada Luni-Vineri, orele 8.00-16.00</p>
+    </div>
+     </div>
+    
+  </footer>
 </body>
 </html>
-
