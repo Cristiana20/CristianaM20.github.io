@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<head>
+
+    <style>
+    * {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #F8F9FA;
+      color: #222222;
+      font-weight: 400;
+    }
+    
+      .button {
+                background-color: rgb(249, 205, 240);
+                color: black;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 18px;
+                margin: 10px;
+            } 
+      
+    
+    strong {
+      font-weight: 700;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+    
+    p {
+      font-size: 1.125rem;
+      color: #222222;
+      margin: 0 0 15px;
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+    
+    h1 {
+      color: #000000;
+      font-size: 36px;
+    }
+    
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 80px;
+      }
+    }
+    
+    h2 {
+      color: #222222;
+      font-size: 30px;
+    }
+    
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 60px;
+      }
+    }
+    
+    h3 {
+      color: #444444;
+      font-size: 24px;
+    }
+    
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 50px;
+      }
+    }
+    
+    h4 {
+      color: #555555;
+      font-size: 22px;
+    }
+    
+    @media (min-width: 768px) {
+      h4 {
+        font-size: 40px;
+      }
+    }
+    
+    h5 {
+      color: #666666;
+      font-size: 20px;
+    }
+    
+    @media (min-width: 768px) {
+      h5 {
+        font-size: 35px;
+      }
+    }
+    
+    h6 {
+      color: #777777;
+      font-size: 18px;
+    }
+    
+    @media (min-width: 768px) {
+      h6 {
+        font-size: 32px;
+      }
+    }
+    
+    section {
+      padding: 90px 15px;
+    }
+    
+    a.cta {
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #f72d3d;
+      border: 1px solid #d41c2a;
+      border-radius: 25px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      display: inline-block;
+      -webkit-box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 19px 0px;
+              box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 19px 0px;
+      -webkit-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+    }
+    
+    a.cta:hover {
+      background-color: #f75763;
+      border: 1px solid #3b1215;
+      color: #000000;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .container img {
+      padding: 0.25rem;
+      border: 1px solid #fff0f5;
+      border-radius: 0.25rem;
+    }
+    
+    .banner {
+      background: -webkit-gradient(linear, left top, right top, from(rgba(10, 7, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../img/banner.jpg) no-repeat;
+      background: linear-gradient(90deg, rgba(100, 10, 30, 0.8), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp8576633.png") no-repeat;
+      background-position: top right;
+      background-size: cover;
+    }
+    
+    .banner h1 {
+      color: rgba(255, 255, 255, 0.85);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    
+    .banner p {
+      color: #FFFFFF;
+      font-size: 1.375rem;
+      letter-spacing: 1px;
+      font-weight: 100;
+      text-shadow: 2px 2px 7px #222222;
+    }
+    
+    .first {
+      background-color: #FFFFFF;
+      background-image: linear-gradient(315deg, #B0E0E6 0%, #FFF0F5 74%);
+    }
+    
+    .first .container {
+      max-width: 800px;
+    }
+    
+    .second {
+      background-color: #fff8e6;
+    }
+    
+    .second .container {
+      display: block;
+    }
+    
+    @media (min-width: 768px) {
+      .second .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .second .container .left-img {
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .second .container .right-content {
+        -ms-flex-preferred-size: 65%;
+            flex-basis: 65%;
+      }
+    }
+    
+    
+    
+    
+    footer {
+      background-color: SlateBlue;
+      padding: 40px 15px;
+    }
+    
+    footer .container {
+      max-width: 600px;
+    }
+    
+    footer p {
+      color: #FFFFFF;
+      margin: 0;
+      text-align: center;
+      font-weight: 100;
+      font-size: 14px;
+    }
+    </style>
+    
+    
+    
+    
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+      <!-- font ends here -->
+      <link rel="stylesheet" href="./sass/style.css">
+      <title>Despre noi</title>
+    </head>
+    <body>
+    
+    <div class="border" style="text-align:center;">
+    <br><br>
+    <img src="https://i.ibb.co/GHyxxLx/dmcpro.png" height="120" width="120">
+        <br><br>
+      <div class="border" style="text-align:center;">    
+    
+            
+            <a href="index.html" class="button">Acasa</a>
+            <a href="blog.html" class="button">Blog</a>
+            <a href="Pachete turistice.html" class="button">Pachete turistice</a>
+            <a href="Contact.html" class="button">Contact</a>
+            <a href="Curios.html" class="button">Curiozități</a>
+            <a href="Partener.html" class="button">Despre noi</a>
+        </div> 
+        <br><br>
+      <section class="banner">
+        <div class="container">
+        
+       
+          <h1>DMC</h1>
+          <p>Devino partener!</p>
+        </div>     <!-- .container -->
+      </section>  <!-- .banner -->
+      <section class="first">
+        <div class="container">
+          <p>Pentru a deveni partener al firmei DMC, următoarele etape pot fi urmate:</p>
+    <ol>
+      <li>Cercetare și evaluare: Începe prin a face o cercetare detaliată despre noi, inclusiv despre serviciile pe care le oferi, destinațiile acoperite. Asigură-te că profilul tău se potrivește cu  viziunea DMC.</li>
+      <li>Contact inițial: Contactează DMC prin intermediul canalelor oficiale de comunicare, prin telefon, e-mail sau formularul de contact de pe site. Explică intenția ta de a deveni partener și exprimă-ți interesul.</li>
+      <li>Prezentare a ofertei: Prezintă o descriere detaliată a afacerii tale și a serviciilor pe care le oferi.</li>
+      <li>Negociere și acord contractual: În cazul în care DMC este interesată de propunerea ta, se vor purta discuții și negocieri privind termenii și condițiile colaborării. Aceasta poate include aspecte precum comisioane, distribuția responsabilităților și durata contractului.
+    </li>
+      <li>
+    Evaluarea și aprobarea: DMC va evalua oferta ta și potențialul de a fi un partener adecvat. În funcție de criteriile lor de selecție și de nevoile lor curente, vom decide dacă să încheie un acord de parteneriat cu tine.</li>
+      <li>Implementarea colaborării: După încheierea acordului, vei lucra îndeaproape cu echipa DMC pentru a implementa colaborarea. Acest lucru poate implica cooperarea în dezvoltarea de pachete turistice, promovarea reciprocă a serviciilor și crearea unei baze solide pentru o relație de lungă durată.</li>
+      <li>Cu o gamă variată de pachete turistice, DMC este capabilă să satisfacă nevoile și preferințele diverse ale turiștilor, fie că aceștia doresc să exploreze frumusețile naturale ale României, să se bucure de aventuri în aer liber sau să descopere culturile și tradițiile unor destinații exotice.</li>
+    </ol> 
+     
+          <a class="cta" href="index.html">Devino partener! ⟩</a>
+        </div>
+      </section>
+     
+      <footer>
+        <div class="container">
+          <p>Pentru mai multe informații puteți să ne contactați în perioada Luni-Vineri, orele 8.00-16.00</p>
+        </div>
+         </div>
+        
+      </footer>
+    </body>
+    </html>
+    
