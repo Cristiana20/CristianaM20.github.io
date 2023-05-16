@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<head>
+
+<style>
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F9FA;
+  color: #222222;
+  font-weight: 400;
+}
+
+  .button {
+			background-color: rgb(249, 205, 240);
+			color: black;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 18px;
+			margin: 10px;
+		} 
+  
+
+strong {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.125rem;
+  color: #222222;
+  margin: 0 0 15px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  color: #000000;
+  font-size: 36px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+h2 {
+  color: #222222;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+h3 {
+  color: #444444;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 50px;
+  }
+}
+
+h4 {
+  color: #555555;
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 40px;
+  }
+}
+
+h5 {
+  color: #666666;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    font-size: 35px;
+  }
+}
+
+h6 {
+  color: #777777;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  h6 {
+    font-size: 32px;
+  }
+}
+
+section {
+  padding: 90px 15px;
+}
+
+a.cta {
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f72d3d;
+  border: 1px solid #d41c2a;
+  border-radius: 25px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 19px 0px;
+          box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 19px 0px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+a.cta:hover {
+  background-color: #f75763;
+  border: 1px solid #3b1215;
+  color: #000000;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container img {
+  padding: 0.25rem;
+  border: 1px solid #fff0f5;
+  border-radius: 0.25rem;
+}
+
+.banner {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(10, 7, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../img/banner.jpg) no-repeat;
+  background: linear-gradient(90deg, rgba(100, 10, 30, 0.8), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp8576633.png") no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+.banner h1 {
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.banner p {
+  color: #FFFFFF;
+  font-size: 1.375rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-shadow: 2px 2px 7px #222222;
+}
+
+.first {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(315deg, #B0E0E6 0%, #FFF0F5 74%);
+}
+
+.first .container {
+  max-width: 800px;
+}
+
+.second {
+  background-color: #fff8e6;
+}
+
+.second .container {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .second .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .second .container .left-img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .second .container .right-content {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+.second .container .right-content h2 {
+  margin: 30px 0 0;
+}
+
+@media (min-width: 768px) {
+  .second .container .right-content h2 {
+    margin: 0;
+  }
+}
+
+.third {
+  background-color: #e6f5fc;
+}
+
+@media (min-width: 768px) {
+  .third .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .four .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .four .container .member {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .four .container .member h3 {
+    font-size: 32px;
+  }
+}
+
+
+
+footer {
+  background-color: SlateBlue;
+  padding: 40px 15px;
+}
+
+footer .container {
+  max-width: 600px;
+}
+
+footer p {
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+  font-weight: 100;
+  font-size: 14px;
+}
+</style>
+
+
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- font ends here -->
+  <link rel="stylesheet" href="./sass/style.css">
+  <title>Valori</title>
+</head>
+<body>
+
+<div class="border" style="text-align:center;">
+<br><br>
+<img src="https://i.ibb.co/GHyxxLx/dmcpro.png" height="120" width="120">
+    <br><br>
+  <div class="border" style="text-align:center;">    
+
+		
+        <a href="index.html" class="button">Acasa</a>
+		<a href="blog.html" class="button">Blog</a>
+		<a href="Pachete turistice.html" class="button">Pachete turistice</a>
+        <a href="Contact.html" class="button">Contact</a>
+		<a href="Curios.html" class="button">Curiozități</a>
+        <a href="Partener.html" class="button">Parteneriate</a>
+        <a href="blog.html" class="button">Blog</a>
+		
+    <br><br>
+  <section class="banner">
+    <div class="container">
+    
+   
+      <h1>VALORILE MDC</h1>
+      
+    </div>     <!-- .container -->
+  </section>  <!-- .banner -->
+  <section class="first">
+    <div class="container">
+      <p>Calitatea: Agenția de turism se angajează să ofere servicii de înaltă calitate și să asigure satisfacția clienților. Aceasta implică furnizarea de experiențe memorabile, servicii personalizate și atenție la detalii.</p>
+
+    </div>
+  </section>
+  <section class="second">
+    <div class="container">
+      
+        <p>Profesionalism: Agenția de turism promovează o abordare profesională și etică în toate interacțiunile cu clienții, partenerii și angajații. Se străduiește să fie un partener de încredere și să ofere informații precise și corecte despre destinații și servicii.</p>
+
+    </div>
+  </section>
+
+  <section class="six">
+    <div class="container">
+  
+      <p>Responsabilitate: Agenția de turism are grijă de impactul său asupra mediului înconjurător și comunităților locale. Promovează turismul sustenabil și respectă principiile de conservare a mediului și culturii locale.p>
+    
+    </div>
+  </section>
+  
+    <section class="second">
+    <div class="container">
+      
+        <p>Personalizare: Agenția de turism se străduiește să ofere pachete turistice personalizate și adaptate nevoilor și preferințelor fiecărui client. Își asigură că excursiile și serviciile oferite se potrivesc perfect cu așteptările și dorințele clienților.</p>
+
+    </div>
+  </section>
+  
+  
+   <section class="first">
+    <div class="container">
+      <p>Relații de lungă durată: Agenția de turism valorizează construirea de relații de lungă durată cu clienții săi, partenerii și comunitățile locale. Se străduiește să ofere suport și asistență în toate etapele călătoriilor și să creeze legături durabile bazate pe încredere și respect reciproc.</p>
+
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  <footer>
+    <div class="container">
+      <p>Pentru mai multe informații puteți să ne contactați în perioada Luni-Vineri, orele 8.00-16.00</p>
+    </div>
+     </div>
+    
+  </footer>
+</body>
+</html>
